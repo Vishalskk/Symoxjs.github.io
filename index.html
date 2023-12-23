@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <title>SYMOX</title>
+</head>
+<body>
+    <section id="mainsectionSYMOX">
+    <div class="navdiv" id="navdivid">
+        <div style="display: flex;">
+        <div class="icon kajal"><ion-icon name="grid-sharp"></ion-icon></div>
+        <h4 id="h4id" class="suio">Symox</h4>
+<span onclick="gridbutton();" class="icon iconleft" id="gridbutton"><ion-icon name="list-outline"></ion-icon></span>
+        </div>
+        <div style="height: 990px;overflow: auto;">
+<h4 class="menuclass">MENU</h4>
+<div style="display: flex;">
+    <div class="icon"><ion-icon name="speedometer-outline"></ion-icon></div>
+    <h4 id="h4id">Dashboard</h4>
+    <h4 class="pill" style="background-color:rgb(31, 189, 173);">5+</h4>
+</div>
+<h4 class="menuclass">APPLICATIONS</h4>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="calendar-outline"></ion-icon></div>
+        <h4 id="h4id">Calendar</h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+        <h4 id="h4id">Chat</h4>
+    <h4 class="pill offcandown" style="background-color: rgb(216, 23, 39); color: white;"> Hot </h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+        <h4 id="h4id">Email</h4>
+    <h4 class="offcandown" onclick="acro1downclk();" id="firstupchevron"><ion-icon name="chevron-down-outline"></ion-icon></h4>      
+    <h4 class="offcandown" onclick="acro1upclk();" id="firstupchevronDOP"><ion-icon name="chevron-up-outline"></ion-icon></h4>      
+</div>
+<div id="acro1">
+        <p>Inbox</p>
+        <p style="margin-top: 20px;">Read Email</p>
+</div>  
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="home-outline"></ion-icon></div>
+        <h4 id="h4id">Ecommmerce</h4>
+    <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="newspaper-outline"></ion-icon></div>
+        <h4 id="h4id">Invoices</h4>
+    <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="people-outline"></ion-icon></div>
+        <h4 id="h4id">Contacts</h4>
+    <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<h4 class="menuclass">PAGES</h4>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="person-circle-outline"></ion-icon></div>
+        <h4 id="h4id">Authentication</h4>
+    <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="document-outline"></ion-icon></div>
+        <h4 id="h4id">Utility</h4>
+    <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<div style="display: flex;">
+      <div class="icon"><ion-icon name="checkbox-outline"></ion-icon></div>
+      <h4 id="h4id">Vertical</h4>
+      </div>
+<div style="display: flex;">
+        <!-- <div class="icon"><ion-icon name="checkbox-outline"></ion-icon></div> -->
+        <h4 class="menuclass">COMPONENTS</h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="logo-behance"></ion-icon></div>
+<h4 id="h4id">BOOTSTRAP</h4>
+<h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="heart-circle-outline"></ion-icon></div>
+        <h4 id="h4id">Extended</h4>
+<h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+</div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="create-outline"></ion-icon></div>
+        <h4 id="h4id">Forms</h4>
+        <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="list-outline"></ion-icon></div>
+        <h4 id="h4id">Tables</h4>
+        <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="bar-chart-outline"></ion-icon></div>
+        <h4 id="h4id">Charts</h4>
+        <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="aperture-outline"></ion-icon></div>
+        <h4 id="h4id">Icons</h4>
+        <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+        <h4 id="h4id">Maps</h4>
+        <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+<div style="display: flex;">
+        <div class="icon"><ion-icon name="share-social-outline"></ion-icon></div>
+        <h4 id="h4id">Multi Level</h4>
+        <h4 class="offcandown"><ion-icon name="chevron-down-outline"></ion-icon></h4>
+        </div>
+</div>
+    </div>
+    <div class="secondmaindiv" id="secondmaindivid">
+    <div id="navbar">
+    <div>
+        <input type="search" style="color: grey;" id="navsearchbar" placeholder="    Search....">
+<span onclick="gridbutton2();" class="icon iconleft icon2" id="gridbutton2"><ion-icon name="list-outline"></ion-icon></span>
+        <!-- <ion-icon class="searchglass" name="search-outline"></ion-icon> -->
+</div>
+    <div class="flaglogprofile">
+        <img id="flagofus" src="Flag-United-States-of-America.webp" alt="">
+        <span onclick="ghantiicon();" id="ghantibutton">&#128276;</span>
+        <span onclick="darklightthemes();" id="ghantibutton2"><ion-icon name="moon"></ion-icon></span>
+        <a href="index.html">
+        <span id="themesun" ><ion-icon name="sunny-outline"></ion-icon></span>
+        </a>
+        <span onclick="loginac();"id="ghantibutton" class="userimg"><img src="avatar-3.jpg" class="userimgtag"></span>
+    </div>
+    
+    </div>
+    <section id="forbgcolor" style="background-color: #031018;height: 1000px;overflow: auto;">
+<div class="vertical" id="verticalid">
+        <div style="display: flex;justify-content: space-between;">
+                <h1 id="idforwel">Welcome !</h1>
+                <h3 style="color: rgb(87,87,87);font-weight: lighter;font-size: 16px;padding: 10px;">Symox > Welcome !</h3>
+        </div>
+        <div class="vertical5div">
+                <div class="div11"><h1 class="h1tag2" >Symox Dashboard</h1>
+                        <h1 class="h1tag2"> Welcome Back, Vishal Dushad!</h1>
+                <p class="ptag1" style="margin-top: 20px;">Maecenas nec odio et ante tincidunt tempus.</p>
+                <p class="ptag1">Donec vitae sapien libero tincidunt.</p>
+                <button onclick="viewprofile();" class="viewprofilebut">View Profile	&rarr;</button>
+                </div>
+                <div class="div1">
+                       <div class="div1icon"><ion-icon name="bag-handle-outline" class="IAMicon"></ion-icon></div>
+                       <div class="ptag2">Today Orders</div>
+                       <div class="ptag3">3,89,658 <span style="color: #33a186;font-size: 15px;">&darr; 10%</span> </div>
+                       <div class="rangerover">
+                               <!-- <img src="range1.png" alt=""> -->
+              
+                               <canvas id="myChart3" style="width:100%;max-width:600px">
+                                <script>
+var xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myChart3", {
+type: "line",
+data: {
+labels: xValues,
+datasets: [{ 
+data: [8060,1140,7060,3060,4070,1110,5330,1210,7830,2478],
+borderColor: "red",
+fill: false
+}, { 
+
+}, { 
+
+}]
+},
+options: {
+legend: {display: false}
+}
+});
+                                </script>
+                        </canvas>                       
+                       </div>
+                       <div style="display: flex;justify-content: space-around;color: #a8b0c5;">
+                        <p>Day</p>
+                       <p>Week</p>
+                        <p>Month</p>
+                        <p>Year</p>
+                </div>
+                </div>
+                <div class="div1">
+                        <div class="div1icon2"><ion-icon name="eye" class="IAMicon"></ion-icon></div>
+                       <div class="ptag2">Today Visitor</div>
+                       <div class="ptag3">1,648,29 <span style="color: #ff0000;font-size: 15px;">&darr;  19%</span> </div>
+                       <div class="rangerover">
+                               <canvas id="myChart1" style="width:100%;max-width:600px">
+                                <script>
+ var xValues = [100,200,300,400,500,600,700,800,900,1000];
+ 
+ new Chart("myChart1", {
+   type: "line",
+   data: {
+     labels: xValues,
+     datasets: [{ 
+       data: [8060,1140,7060,3060,4070,1110,5330,1210,7830,2478],
+       borderColor: "red",
+       fill: false
+     }, { 
+      
+     }, { 
+       
+     }]
+   },
+   options: {
+     legend: {display: false}
+   }
+ });
+                                        </script>
+                                </canvas>
+                               
+                        </div>
+                        <div style="display: flex;justify-content: space-around;color: #a8b0c5;">
+                         <p>Day</p>
+                        <p>Week</p>
+                         <p>Month</p>
+                         <p>Year</p>
+                 </div>
+                 </div>
+
+                 <div class="div1">
+                        <div class="div1icon"><ion-icon name="bag-handle-outline" class="IAMicon"></ion-icon></div>
+                        <div class="ptag2">Today Orders</div>
+                        <div class="ptag3">3,89,658 <span style="color: #33a186;font-size: 15px;">&darr; 10%</span> </div>
+                        <div class="rangerover">
+                                <!-- <img src="range1.png" alt=""> -->
+                                <canvas id="myChart3" style="width:100%;max-width:600px">
+                                        <script>
+ var xValues = [100,200,300,400,500,600,700,800,900,1000];
+ 
+ new Chart("myChart3", {
+   type: "line",
+   data: {
+     labels: xValues,
+     datasets: [{ 
+       data: [8060,1140,7060,3060,4070,1110,5330,1210,7830,2478],
+       borderColor: "red",
+       fill: false
+     }, { 
+      
+     }, { 
+       
+     }]
+   },
+   options: {
+     legend: {display: false}
+   }
+ });
+                                        </script>
+                                </canvas>
+                               
+                        </div>
+                        <div style="display: flex;justify-content: space-around;color: #a8b0c5;">
+                         <p>Day</p>
+                        <p>Week</p>
+                         <p>Month</p>
+                         <p>Year</p>
+                 </div>
+                 </div>
+
+                 <div class="div1">
+                        <div class="div1icon"><ion-icon name="bag-handle-outline" class="IAMicon"></ion-icon></div>
+                        <div class="ptag2">Today Orders</div>
+                        <div class="ptag3">3,89,658 <span style="color: #33a186;font-size: 15px;">&darr; 10%</span> </div>
+                        <div class="rangerover">
+                                <!-- <img src="range1.png" alt=""> -->
+                                <canvas id="myChart4" style="width:100%;max-width:600px">
+                                        <script>
+ var xValues = [100,200,300,400,500,600,700,800,900,1000];
+ 
+ new Chart("myChart4", {
+   type: "line",
+   data: {
+     labels: xValues,
+     datasets: [{ 
+       data: [8060,1140,7060,3060,4070,1110,5330,1210,7830,2478],
+       borderColor: "red",
+       fill: false
+     }, { 
+      
+     }, { 
+       
+     }]
+   },
+   options: {
+     legend: {display: false}
+   }
+ });
+                                        </script>
+                                </canvas>
+                               
+                        </div>
+                        <div style="display: flex;justify-content: space-around;color: #a8b0c5;">
+                         <p>Day</p>
+                        <p>Week</p>
+                         <p>Month</p>
+                         <p>Year</p>
+                 </div>
+                 </div>
+                <!--  <div class="div1">
+                        <div class="div1icon2"><ion-icon name="eye" class="IAMicon"></ion-icon></div>
+                       <div class="ptag2">Today Visitor</div>
+                       <div class="ptag3">1,648,29 <span style="color: #ff0000;font-size: 15px;">&darr;  19%</span> </div>
+                       <div class="rangerover">
+                               <canvas id="myChart" style="width:100%;max-width:600px">
+                                <script>
+var xValues = [];
+var yValues = [];
+generateData("Math.sin(x)", 0, 10, 0.5);
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      pointRadius: 2,
+      borderColor: "rgba(0,0,255,0.5)",
+      data: yValues
+    }]
+  },    
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "y = x * 2 + 7",
+      fontSize: 16
+    }
+  }
+});
+function generateData(value, i1, i2, step = 1) {
+  for (let x = i1; x <= i2; x += step) {
+    yValues.push(eval(value));
+    xValues.push(x);
+  }
+}
+                                </script>
+                        </canvas>
+                              
+                       </div>
+                       <div style="display: flex;justify-content: space-around;color: #a8b0c5;">
+                        <p>Day</p>
+                       <p>Week</p>
+                        <p>Month</p>
+                        <p>Year</p>
+                </div>
+               </div> -->
+
+            <!--    <div class="div1">
+                        <div class="div1icon"><ion-icon name="rocket" class="IAMicon"></ion-icon></div>
+                       <div class="ptag2">Total Expense</div>
+                       <div class="ptag3">6,48,249 <span style="color: #33a186;font-size: 15px;">&darr; 22%</span> </div>
+                       <div class="rangerover">
+                               <canvas id="myChart" style="width:100%;max-width:600px">
+                                <script>
+var xValues = [];
+var yValues = [];
+generateData("Math.sin(x)", 0, 10, 0.5);
+
+new Chart("myChart", {
+type: "line",
+data: {
+labels: xValues,
+datasets: [{
+fill: false,
+pointRadius: 2,
+borderColor: "rgba(0,0,255,0.5)",
+data: yValues
+}]
+},    
+options: {
+legend: {display: false},
+title: {
+display: true,
+text: "y = x * 2 + 7",
+fontSize: 16
+}
+}
+});
+function generateData(value, i1, i2, step = 1) {
+for (let x = i1; x <= i2; x += step) {
+yValues.push(eval(value));
+xValues.push(x);
+}
+}
+                                </script>
+                        </canvas>
+                       </div>
+                       <div style="display: flex;justify-content: space-around;color: #a8b0c5;">
+                        <p>Day</p>
+                       <p>Week</p>
+                        <p>Month</p>
+                        <p>Year</p>
+                </div>
+                </div> -->
+
+
+
+
+
+
+
+
+
+
+<!--
+
+                <div class="div1">
+                        <div class="div1icon2"><ion-icon name="people-outline" class="IAMicon"></ion-icon></div>
+                       <div class="ptag2">New Users </div>
+                       <div class="ptag3">$5,265,3<span style="color: #ff0b03;font-size: 15px;">&darr; 18%</span> </div>
+                       <div class="rangerover">
+                               <canvas id="myChart" style="width:100%;max-width:600px">
+                                <script>
+var xValues = [];
+var yValues = [];
+generateData("Math.sin(x)", 0, 10, 0.5);
+
+new Chart("myChart", {
+type: "line",
+data: {
+labels: xValues,
+datasets: [{
+fill: false,
+pointRadius: 2,
+borderColor: "rgba(0,0,255,0.5)",
+data: yValues
+}]
+},    
+options: {
+legend: {display: false},
+title: {
+display: true,
+text: "y = x * 2 + 7",
+fontSize: 16
+}
+}
+});
+function generateData(value, i1, i2, step = 1) {
+for (let x = i1; x <= i2; x += step) {
+yValues.push(eval(value));
+xValues.push(x);
+}
+}
+                                </script>
+                        </canvas>
+                       </div>
+                       <div style="display: flex;justify-content: space-around;color: #a8b0c5;">
+                        <p>Day</p>
+                       <p>Week</p>
+                        <p>Month</p>
+                        <p>Year</p>
+                </div></div4
+        </div>  -->
+
+
+
+
+
+</div>
+
+    </div>
+<div class="div2 bgofmain">
+        <div class="div21" id="div21">
+                <div style="display: flex;justify-content: space-between;">
+                <h3 style="color: white;">Sales Statistics</h3>
+                <p style="color: gray;">Sort By: <span style="color: #a8b0c5 ;">Weekly<ion-icon name="chevron-down-outline"></ion-icon></p>
+        </div>
+        <div style="display: flex;justify-content: space-around;margin-top: 30px;">
+        <section class="graph">
+        <canvas id="chart">
+                <script>
+               
+               const ctx = document.getElementById('chart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June','July','Aug','Sep','Oct'],
+        datasets: [{
+            label: '# of Votes',
+            data: [6, 11, 15, 20,18,22, 17,21,22,19],
+            backgroundColor: [
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)',
+                'rgb(51, 161, 134)',
+                'rgb(12, 142, 207)',
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+        </canvas>
+        </section>
+        <div class="div24">
+                <div class="div241">
+                        <div style="color: #a8b0c5;"><span style="color: #0c8ecf;">&#x25CF;</span> Product Order</div>
+                        <div class="rsdiv">25.4%&darr;</div>
+                </div>
+                <h3 style="color: white;border-bottom: 1px solid #062331;margin-top: 10px;margin-bottom: 20px;"><span style="color: rgb(19, 49, 49);;">k</span>43,541.58</h3>
+
+                <div class="div241">
+                        <div style="color: #a8b0c5;"><span style="color: #0c8ecf;">&#x25CF;</span> Product Pending</div>
+                        <div class="rsdiv">17.4%&darr;</div>
+                </div>
+                <h3 style="color: white;border-bottom: 1px solid #062331;margin-top: 10px;margin-bottom: 20px;"><span style="color: rgb(19, 49, 49);;">k</span>17,351.12</h3>
+
+                <div class="div241">
+                        <div style="color: #a8b0c5;"><span style="color:#33a186;">&#x25CF;</span> Product Cancelled</div>
+                        <div class="rsdiv" style="color: #33a186 !important;">16.3%&darr;</div>
+                </div>
+                <h3 style="color: white;border-bottom: 1px solid #062331;margin-top: 10px;margin-bottom: 20px;"><span style="color: rgb(19, 49, 49);;">k</span>32,569.74</h3>
+
+                <div class="div241">
+                        <div style="color: #a8b0c5;"><span style="color: #0c8ecf;">&#x25CF;</span> Product Delivered</div>
+                        <div class="rsdiv">65.7%&darr;</div>
+                </div>
+                <h3 style="color: white;"><span style="color: rgb(19, 49, 49);;">k</span>67,356.24</h3>
+
+        </div>
+        </div>
+        </div>
+        <div class="div22" id="div22">
+                <div style="display: flex;justify-content: space-between;">
+                        <h3 style="color: white;"> Sales By Category</h3>
+                        <p style="color: gray;">Sort By: <span style="color: #a8b0c5 ;">Weekly<ion-icon name="chevron-down-outline"></ion-icon></p>
+                </div>
+                <div class="circl">
+                        <canvas id="chart2">
+                                <script>
+                                       var xvValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yvValues = [35, 15, 8, 7, 20];
+var vbarColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart", {
+  type: "doughnut",
+  datav: {
+    labels: xvValues,
+    datasets: [{
+      backgroundColor: vbarColors,
+      datav: yvValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "World Wide Wine Production 2018"
+    }
+  }
+});
+                                </script>
+                        </canvas>
+                </div>
+        </div>
+</div>
+<div class="div31 bgofmain">
+        <div class="div31ka1" id="div31ka1">
+                <div class="div31ka11" style="display: flex;justify-content: space-between;text-align: center;padding: 10px;border-bottom: 1px solid rgb(255, 255, 255);">
+                        <h3 style="color: white;">Order Activity</h3>
+                        <span style="color: #a8b0c5;"><ion-icon name="ellipsis-horizontal-sharp"></ion-icon></span>
+                </div>
+                <div style="display: flex;justify-content: space-around;">
+                <div class="div31ka1ka1"></div>
+                
+                <div class="div31ka1ka1">
+                        <h4 style="color: white;margin-top: 20px;">Your Manager Posted</h4>
+                        <p style="color: #a8b0c5;">James Raphael</p>
+
+                        <h4 style="color: white;margin-top: 20px;">You have 5 pending order</h4>
+                        <p style="color: #a8b0c5;">Delivered</p>
+
+                        <h4 style="color: white;margin-top: 20px;">New Order Received</h4>
+                        <p style="color: #a8b0c5;">Pick Up</p>
+
+                        <h4 style="color: white;margin-top: 20px;">Your Manager Posted</h4>
+                        <p style="color: #a8b0c5;">In Transit</p>
+
+                        <h4 style="color: white;margin-top: 20px;">You have 1 pending order.</h4>
+                        <p style="color: #a8b0c5;">Dispatched</p>
+
+                        <h4 style="color: white;margin-top: 20px;">New Order Received</h4>
+                        <p style="color: #a8b0c5;">Order Received</p>
+                </div>
+
+
+                <div class="div31ka1ka1">
+                        <p style="color: #a8b0c5;margin-top: 20px;">1 hour ago</p>
+
+                        <p style="color: #a8b0c5;margin-top: 40px;">6 hour ago</p>
+
+                        <p style="color: #a8b0c5;margin-top: 40px;">1 day ago</p>
+
+                        <p style="color: #a8b0c5;margin-top: 40px;">Yesterday</p>
+
+                        <p style="color: #a8b0c5;margin-top: 40px;">2 hour ago</p>
+
+                        <p style="color: #a8b0c5;margin-top: 40px;">Today</p>
+                </div>
+
+
+
+
+
+
+        </div>
+        </div>
+        <div class="div31ka2" id="div31ka2">
+                <div class="div31ka11" style="display: flex;justify-content: space-between;text-align: center;padding: 10px;border-bottom: 1px solid rgb(255, 255, 255);">
+                        <h3 style="color: white;">Top Users</h3>
+                        <span style="color: #a8b0c5;">
+                                All Members<ion-icon name="chevron-down-outline"></ion-icon></span>
+                </div>
+                <div style="display: flex;justify-content: space-around;">
+                        <div class="div31ka1ka1">
+                                <div style="padding: 10px;border-radius: 50%;margin-top: 15px;"><img src="avatar-1.jpg" style="height: 30px;width: 30px;border-radius: 50%;"></div>
+                                <div style="padding: 10px;border-radius: 50%;margin-top: 5px;"><img src="avatar-2.jpg" style="height: 30px;width: 30px;border-radius: 50%;"></div>
+                                <div style="padding: 10px;border-radius: 50%;margin-top: 5px;"><img src="avatar-3.jpg" style="height: 30px;width: 30px;border-radius: 50%;"></div>
+                                <div style="padding: 10px;border-radius: 50%;margin-top: 5px;"><img src="avatar-4.jpg" style="height: 30px;width: 30px;border-radius: 50%;"></div>
+                                <div style="padding: 10px;border-radius: 50%;margin-top: 5px;"><img src="avatar-5.jpg" style="height: 30px;width: 30px;border-radius: 50%;"></div>
+                                <div style="padding: 10px;border-radius: 50%;margin-top: 5px;"><img src="avatar-6.jpg" style="height: 30px;width: 30px;border-radius: 50%;"></div>
+                        </div>
+                         <div class="div31ka1ka1">
+                        <h4 style="color: white;margin-top: 20px;">Glenn Holden</h4>
+                        <p style="color: #a8b0c5;"><ion-icon name="location-outline"></ion-icon> Nevada</p>
+
+                        <h4 style="color: white;margin-top: 20px;">Lolita Hamill</h4>
+                        <p style="color: #a8b0c5;"><ion-icon name="location-outline"></ion-icon>Texas</p>
+
+                        <h4 style="color: white;margin-top: 20px;">Robert Mercer</h4>
+                        <p style="color: #a8b0c5;"><ion-icon name="location-outline"></ion-icon>California</p>
+
+                        <h4 style="color: white;margin-top: 20px;">	
+                                Marie Kim</h4>
+                        <p style="color: #a8b0c5;"><ion-icon name="location-outline"></ion-icon>Montana</p>
+
+                        <h4 style="color: white;margin-top: 20px;">Sonya Henshaw</h4>
+                        <p style="color: #a8b0c5;"><ion-icon name="location-outline"></ion-icon>Colorado</p>
+
+                        <h4 style="color: white;margin-top: 20px;">Marie Kim</h4>
+                        <p style="color: #a8b0c5;"><ion-icon name="location-outline"></ion-icon>Australia</p>
+                </div>
+
+                     
+                        <div class="div31ka1ka1">
+                                <p style="color: #a8b0c5;margin-top: 20px;"><span style="color: #33a186;"><ion-icon name="arrow-up-outline"></ion-icon></span>$250.00</p>
+                                <p style="color: #a8b0c5;margin-top: 40px;"><span style="color: red"><ion-icon name="arrow-down-outline"></ion-icon></span>$250.00</p>
+                                <p style="color: #a8b0c5;margin-top: 40px;"><span style="color: #33a186;"><ion-icon name="arrow-up-outline"></ion-icon></span>$250.00</p>
+                                <p style="color: #a8b0c5;margin-top: 40px;"><span style="color: red"><ion-icon name="arrow-down-outline"></ion-icon></span>$250.00</p>
+                                <p style="color: #a8b0c5;margin-top: 40px;"><span style="color: #33a186;"><ion-icon name="arrow-up-outline"></ion-icon></span>$250.00</p>
+                                <p style="color: #a8b0c5;margin-top: 40px;"><span style="color: red"><ion-icon name="arrow-down-outline"></ion-icon></span>$250.00</p>
+                        </div>
+                        <div class="div31ka1ka1">
+                        <p class="rsdiv2" style="color: red;margin-top: 20px;">Cancel</p>
+                        <p class="rsdiv2" style="color: #33a186;margin-top: 40px;">Succes</p>
+                        <p class="rsdiv2" style="color: #0c8ecf;margin-top: 40px;">Active</p>
+                        <p class="rsdiv2" style="color: goldenrod;margin-top: 40px;">Pending</p>
+                        <p class="rsdiv2" style="color: #0c8ecf;margin-top: 40px;">Active</p>
+                        <p class="rsdiv2" style="color: #33a186;margin-top: 40px;">Succes</p>
+                        </div>
+                        <div class="div31ka1ka1">
+                                <p style="color: #a8b0c5;margin-top: 20px;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                <p style="color: #a8b0c5;margin-top: 40px;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                <p style="color: #a8b0c5;margin-top: 40px;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                <p style="color: #a8b0c5;margin-top: 40px;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                <p style="color: #a8b0c5;margin-top: 40px;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                <p style="color: #a8b0c5;margin-top: 40px;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+
+                        </div>
+                </div>
+        </div>
+        <div class="div31ka3" id="div31ka3">
+                <div class="div31ka3ka1">
+                        <div class="div31ka11" style="display: flex;justify-content: space-between;text-align: center;padding: 10px;border-bottom: 1px solid rgb(255, 255, 255);">
+                                <h3 style="color: white;">Top Countries</h3>
+                                <span style="color: #a8b0c5;">
+                                        
+View All
+<ion-icon name="chevron-down-outline"></ion-icon></span>
+                        </div>
+                        <div style="display: flex;justify-content: space-around;">
+                                <div class="div31ka1ka1">
+                                        <div style="padding: 10px;margin-top: 15px;"><img src="Flag-United-States-of-America.webp" style="height: 20px;width: 25px;"></div>
+                                        <div style="padding: 10px;margin-top: 10px;"><img src="germany.jpg" style="height: 20px;width: 25px;"></div>
+                                        <div style="padding: 10px;margin-top: 10px;"><img src="italy.jpg" style="height: 20px;width: 25px;"></div>
+                                        <div style="padding: 10px;margin-top: 10px;"><img src="spain.jpg" style="height: 20px;width: 25px;"></div>
+                                </div>
+                                <div class="div31ka1ka1">
+                                        <p style="color: #a8b0c5;margin-top: 20px;">US</p>
+                
+                                        <p style="color: #a8b0c5;margin-top: 40px;">German</p>
+                
+                                        <p style="color: #a8b0c5;margin-top: 40px;">Italy</p>
+                
+                                        <p style="color: #a8b0c5;margin-top: 40px;">Spain</p>
+                
+                                   </div>
+                                <div class="div31ka1ka1">
+                                        <p style="color: #a8b0c5;margin-top: 20px;">26,568.84</p>
+                                        <p style="color: #a8b0c5;margin-top: 40px;">36,485.52</p>
+                                        <p style="color: #a8b0c5;margin-top: 40px;">17,568.84</p>
+                                        <p style="color: #a8b0c5;margin-top: 40px;">75,521.28</p>
+                                </div>
+                                <div class="div31ka1ka1">
+                                <p style="margin-top: 20px;"><span style="color: #33a186;"><ion-icon name="arrow-up-outline"></ion-icon></span></p>
+                                <p style="margin-top: 40px;"><span style="color: #33a186;"><ion-icon name="arrow-up-outline"></ion-icon></span></p>
+                                <p style="margin-top: 40px;"><span style="color: red"><ion-icon name="arrow-down-outline"></ion-icon></span></p>
+                                <p style="margin-top: 40px;"><span style="color: #33a186;"><ion-icon name="arrow-up-outline"></ion-icon></span></p>
+                                </div>
+                                <div class="div31ka1ka1">
+                                        <p style="color: #a8b0c5;margin-top: 20px;">40%</p>
+                                        <p style="color: #a8b0c5;margin-top: 40px;">50%</p>
+                                        <p style="color: #a8b0c5;margin-top: 40px;">20%</p>
+                                        <p style="color: #a8b0c5;margin-top: 40px;">70%</p>        
+                                </div>
+                                <div class="div31ka1ka1">
+                                        <p style="color: #a8b0c5;margin-top: 20px;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                        <p style="color: #a8b0c5;margin-top: 40px;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                        <p style="color: #a8b0c5;margin-top: 40px;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                        <p style="color: #a8b0c5;margin-top: 40px;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+        
+                                </div>
+                        </div>
+                </div>
+                <div class="div31ka3ka2">
+                        <h3 style="padding:20px">Best Selling Product</h3>
+                        <div style="display: flex;justify-content: space-evenly;width: 60%;">
+                        <h1>2,562 <p style="font-size: 17px;font-weight: lighter;">Sold</p></h1>
+                        <h1>2,562 <p style="font-size: 17px;font-weight: lighter;">Stock</p></h1>
+                        <button style="width: 60px;background-color: #0c8ecf;border: #274b5d;border-radius: 5px;">BUY NOW</button>
+                        </div>
+                </div>
+        </div>
+</div>
+<div class="div41 bgofmain">
+<div class="div41ka1" id="div41ka1">
+        <div class="div31ka11" style="display: flex;justify-content: space-between;text-align: center;padding: 10px;border-bottom: 1px solid rgb(255, 255, 255);">
+                <h3 style="color: white;">Earnings By Item</h3>
+                <span style="color: #a8b0c5;">
+                        Sort By: Weekly
+<ion-icon name="chevron-down-outline"></ion-icon></span>
+        </div>
+        <canvas id="chartlast">
+                <script>
+               
+               const cxx = document.getElementById('chartlast').getContext('2d');
+const charlastt = new Chart(cxx, {
+    type: 'bar',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June','July','Aug','Sep','Oct'],
+        datasets: [{
+            label: '# of Votes',
+            data: [6, 11, 15, 20,18,22, 17,21,22,19],
+            backgroundColor: [
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)',
+                'rgb(51, 161, 134)',
+                'rgb(12, 142, 207)',
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)',
+                'rgb(237, 237, 237)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+            indexAxis:'y',
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+        </canvas>
+</div>
+<div class="div41ka2" id="div41ka2">
+        <div class="div31ka11" style="display: flex;justify-content: space-between;text-align: center;padding: 10px;border-bottom: 1px solid rgb(255, 255, 255);">
+                <h3 style="color: white;">Manage Orders</h3>
+                <span style="color: #a8b0c5;">
+                        Sort By: Weekly
+<ion-icon name="chevron-down-outline"></ion-icon></span>
+        </div>
+        <div style="display: flex;justify-content: space-around;margin-top: 10px;">
+                <p style="color: #a8b0c5;">No</p>
+                <p style="color: #a8b0c5;">Product's Name</p>
+                <p style="color: #a8b0c5;">Variant</p>
+                <p style="color: #a8b0c5;">Type</p>
+                <p style="color: #a8b0c5;">Stock</p>
+                <p style="color: #a8b0c5;">Price</p>
+                <p style="color: #a8b0c5;">Sales</p>
+                <p style="color: #a8b0c5;">Status</p>
+                <p style="color: #a8b0c5;">Edit</p>
+                </div>
+                <div style="display: flex;justify-content: space-evenly;margin-top: 50px;margin-left: 14px; box-shadow: 1px 1px 1px;">
+                        <p style="color: #a8b0c5;"> 1.</p>
+                        <p style="color: #a8b0c5;"> Iphone 12 Max Pro</p>
+                        <p style="color: #a8b0c5;"><span style="color: gray;">&#x25CF;</span> Gray</p>
+                        <p style="color: #a8b0c5;">Electronic</p>
+                        <p style="color: #a8b0c5;">1,564 Items</p>
+                        <p style="color: #a8b0c5;">$1200</p>
+                        <p style="color: #a8b0c5;"> 900</p>
+                        <p style="color: #a8b0c5;"><div style="height: 5px;width: 50px;background-color: #33a186;border-radius: 10px;margin-top: 10px;"></div></p>
+                        <p style="color: #a8b0c5;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                        </div>
+                <div style="display: flex;justify-content: space-evenly;margin-top: 50px;margin-left: 14px; box-shadow: 1px 1px 1px;">
+                        <p style="color: #a8b0c5;"> 2.</p>
+                        <p style="color: #a8b0c5;">New Red and White jacket</p>
+                        <p style="color: #a8b0c5;"><span style="color: rgb(242, 5, 5);">&#x25CF;</span> Red</p>
+                        <p style="color: #a8b0c5;">Fashion</p>
+                        <p style="color: #a8b0c5;">568 Items</p>
+                        <p style="color: #a8b0c5;">$300</p>
+                        <p style="color: #a8b0c5;">650</p>
+                        <p style="color: #a8b0c5;"><div style="height: 5px;width: 50px;background-color: #33a186;border-radius: 10px;margin-top: 10px;"></div></p>
+                        <p style="color: #a8b0c5;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                        </div>
+                        <div style="display: flex;justify-content: space-evenly;margin-top: 50px;margin-left: 14px; box-shadow: 1px 1px 1px;">
+                                <p style="color: #a8b0c5;"> 3.</p>
+                                <p style="color: #a8b0c5;">Latest Series Watch OS 8		
+                                </p>
+                                <p style="color: #a8b0c5;"><span style="color: rgb(13, 12, 12);">&#x25CF;</span> Dark</p>
+                                <p style="color: #a8b0c5;">Electronic</p>
+                                <p style="color: #a8b0c5;">1,232 Items</p>
+                                <p style="color: #a8b0c5;">$250</p>
+                                <p style="color: #a8b0c5;"> 350</p>
+                                <p style="color: #a8b0c5;"><div style="height: 5px;width: 50px;background-color: #0c8ecf;border-radius: 10px;margin-top: 10px;"></div></p>
+                                <p style="color: #a8b0c5;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                </div>
+                                <div style="display: flex;justify-content: space-evenly;margin-top: 50px;margin-left: 14px; box-shadow: 1px 1px 1px;">
+                                        <p style="color: #a8b0c5;"> 4.</p>
+                                        <p style="color: #a8b0c5;"> New Horror Book</p>
+                                        <p style="color: #a8b0c5;"><span style="color: #33a186;">&#x25CF;</span> Green</p>
+                                        <p style="color: #a8b0c5;">Book</p>
+                                        <p style="color: #a8b0c5;">1,564 Items</p>
+                                        <p style="color: #a8b0c5;">$1200</p>
+                                        <p style="color: #a8b0c5;"> 900</p>
+                                        <p style="color: #a8b0c5;"><div style="height: 5px;width: 50px;background-color: #33a186;border-radius: 10px;margin-top: 10px;"></div></p>
+                                        <p style="color: #a8b0c5;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                        </div>
+                                        <div style="display: flex;justify-content: space-evenly;margin-top: 50px;margin-left: 14px; box-shadow: 1px 1px 1px;">
+                                                <p style="color: #a8b0c5;"> 5.</p>
+                                                <p style="color: #a8b0c5;">Smart 4k Android TV</p>
+                                                <p style="color: #a8b0c5;"><span style="color: gray;">&#x25CF;</span> Gray</p>
+                                                <p style="color: #a8b0c5;">Electronic</p>
+                                                <p style="color: #a8b0c5;">5,632 Items</p>
+                                                <p style="color: #a8b0c5;">$700</p>
+                                                <p style="color: #a8b0c5;"> 600</p>
+                                                <p style="color: #a8b0c5;"><div style="height: 5px;width: 50px;background-color: #33a186;border-radius: 10px;margin-top: 10px;"></div></p>
+                                                <p style="color: #a8b0c5;"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></p>
+                                                </div>
+                                              
+</div>
+</div>
+</section>
+</section>
+
+
+
+  
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
