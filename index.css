@@ -5,8 +5,12 @@
 #mainsectionSYMOX{
     display: flex;
 }
+#secondmaindivid{
+    width: 100%;
+}
 .navdiv{
-    /* height: 1000px; */
+    /* height: 
+    px; */
     width: 255px;
     background-color: #061e2c;
     /* overflow: auto; */
@@ -30,9 +34,6 @@ font-size: 20px;
     height: 12px;
     width: 23px;
     border-radius: 12px;
-    position: relative;
-    top: 27px;
-    left: 72px;
 color: white;
 font-size: 11px;
 text-align: center;
@@ -364,9 +365,6 @@ width: 150px;
     margin: auto;
     margin-top: 20px;
 }
-.secondmaindiv{
-    width: 100%;
-}
 #chart{
     height: 340px!important;
     width: 200px;
@@ -444,13 +442,25 @@ margin-top: 10px;
     border-radius: 4px;
     padding: 1px;
 }
-#acro1{
+#acro1,#acro2,#acro3,
+#acro4,
+#acro5,
+#acro6,
+#acro7,
+#acro8,
+#acro9,
+#acro10,
+#acro11,
+#acro12,
+#acro13,
+#acro14,
+#acro15 {
     margin-left: 60px;
     color: #a8b0c5;
     font-weight: lighter;
     display: none;
 }
-#firstupchevronDOP{
+#firstupchevronDOP,#secupchevron{
     display: none;
 }
 
@@ -463,8 +473,145 @@ margin-top: 10px;
 h1, h2, h3, h4, h5, h6 {
     font-family: "Be Vietnam",sans-serif;
 }
+canvas {
+    max-width: 400px;
+    margin: 20px;
+}
+
+
+/* media queryy */
+    /* Your existing styles go here */
+
+    /* Media query for tablets */
+    @media (max-width: 768px) {
+        .navdiv {
+          /* Adjust styles for tablets here */
+          width: 50%;
+          
+        }
+  
+        /* Additional responsive styles for other elements */
+        /* ... */
+      }
+  
+      /* Media query for mobile devices */
+      @media (max-width: 480px) {
+        .navdiv {
+          /* Adjust styles for mobile devices here */
+          width: 50%;
+        }
+        
+  
+        /* Additional responsive styles for other elements */
+        /* ... */
+      }
+
+       /* Media query for tablets */
+    @media (max-width: 768px) {
+        #navbar {
+          flex-direction: column; /* Stack elements vertically on smaller screens */
+        }
+      }
+  
+      /* Media query for mobile devices */
+      @media (max-width: 480px) {
+        #navbar {
+          padding: 5px; /* Adjust padding for smaller screens */
+        }
+  
+        .flaglogprofile {
+          flex-direction: column; /* Stack elements vertically on smaller screens */
+          align-items: flex-start; /* Align items to the start of the container */
+        }
+  
+        #flagofus {
+          margin-right: 0; /* Remove margin for better spacing */
+        }
+      }
+
+          /* Media queries for tablet devices */
+          @media only screen and (max-width: 768px) {
+            .div31ka11 {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+            }
+
+            canvas {
+                width: 100%; /* Make the chart fill the entire width */
+            }
+
+            /* Add any other tablet-specific styles here */
+        }
+
+        /* Media queries for mobile devices */
+        @media only screen and (max-width: 480px) {
+            .div41ka1,.div41ka2 {
+                /* Adjust styles for smaller screens */
+            }
+
+            /* Add any other mobile-specific styles here */
+        }
+
+
+          /* Media queries for tablet devices */
+          @media only screen and (max-width: 768px) {
+            .div31ka11 {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+            }
+
+            /* Add any other tablet-specific styles here */
+        }
+
+        /* Media queries for mobile devices */
+        @media only screen and (max-width: 480px) {
+            .div31ka1ka1,
+            .div31ka1ka2,
+            .div31ka1ka3,
+            .div31ka1ka4 {
+                /* Adjust styles for smaller screens */
+            }
+
+            /* Add any other mobile-specific styles here */
+        }
 
 
 
+          /* Media queries for tablet devices */
+          @media only screen and (max-width: 768px) {
+            .div21,
+            .div22 {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+            }
+
+            /* Add any other tablet-specific styles here */
+        }
+
+        /* Media queries for mobile devices */
+        @media only screen and (max-width: 480px) {
+            .div241,
+            .div24 {
+                /* Adjust styles for smaller screens */
+            }
+
+            /* Add any other mobile-specific styles here */
+        }
 
 
+          /* Media queries for tablet devices */
+          @media only screen and (max-width: 768px) {
+            .vertical5div {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+            }
+
+            /* Add any other tablet-specific styles here */
+        }
+
+        /* Media queries for mobile devices */
+        @media only screen and (max-width: 480px) {
+            .ptag2,
+            .ptag3,
+            .rangerover {
+                /* Adjust styles for smaller screens */
+            }
+
+            /* Add any other mobile-specific styles here */
+        }
